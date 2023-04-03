@@ -131,9 +131,10 @@ body {
 }
 
 .card-name input {
-  width: 350px;
+  width: 340px;
   font-family: "Space Grotesk";
   font-weight: 500;
+  padding-left: 15px;
   height: 35px;
   margin: 5px auto 0px 0px;
   border-radius: 10px;
@@ -146,9 +147,9 @@ body {
 }
 
 .card-number input {
-  width: 350px;
+  width: 340px;
   font-family: "Space Grotesk";
-  padding: auto 10px;
+  padding-left: 15px;
   font-weight: 500;
   height: 35px;
   margin: 5px auto;
@@ -163,6 +164,7 @@ body {
 
 .card-date {
   width: 150px;
+  margin-top: 20px;
 }
 
 .card-date label,
@@ -175,13 +177,11 @@ body {
   width: 50px;
   height: 35px;
   font-family: "Space Grotesk";
-  padding: auto 10px;
+  padding-left: 10px;
   margin: 10px 0px;
   margin-right: 8px;
-  padding: 1px 2px;
   border-radius: 10px;
   border-color: hsl(270, 3%, 87%);
-  display: flex;
 }
 
 .card-date ::placeholder {
@@ -191,23 +191,22 @@ body {
 .card-date li {
   width: 150px;
   padding: 0px;
-  display: flex;
 }
 
 .card-cvc {
   width: 200px;
-  margin: 0px 0px;
+  margin-top: 20px;
 }
 
 .card-cvc input {
-  width: 200px;
+  width: 195px;
   font-family: "Space Grotesk";
-  padding: auto 10px;
+  padding-left:  10px;
   height: 35px;
   margin: 10px 0px;
   border-radius: 10px;
   border-color: hsl(270, 3%, 87%);
-  display: flex;
+
 }
 
 .card-cvc ::placeholder {
@@ -218,7 +217,6 @@ body {
   width: 210px;
   padding: 0px 0px;
   margin: 0px 0px;
-  display: flex;
 }
 
 .date-card-cvc {
@@ -329,6 +327,7 @@ button.onclic:after {
 button.onclic:hover {
   color: #1ecd97;
   background: #fff;
+  font-weight: bold;
 }
 button.validate {
   font-size: 20px;
@@ -338,9 +337,8 @@ button.validate {
 button.validate:after {
   font-family: "FontAwesome";
   content: "\f00c";
+  font-weight: bold;
 }
-
-
 
 @keyframes slideInFromBottom {
     0% {
@@ -386,7 +384,8 @@ button.validate:after {
       transform: rotate(360deg);
     }
   }
-  @media (width: 700px) {
+
+  /* @media (max-width: 700px) {
     .form-body {
       margin-right: 20px;
     }
@@ -394,7 +393,8 @@ button.validate:after {
       margin-left: 20px;
     }
   }
-  @media (width: 500px) {
+   */
+  @media (max-width: 500px) {
     body {
       margin: 0px 0px;
     }

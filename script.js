@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // Check if all fields are filled in  
       if (cardNameInput.value === '') {
-        handleInputError(cardNameInput, 'Please fill in a name on card.');
+        handleInputError(cardNameInput, 'Please fill your name on card.');
         return;
       } else {
         restoreOriginalStyle(cardNameInput);
       }
       if (cardNumberInput.value === '') {
-        handleInputError(cardNumberInput, 'Please fill in a card number.');
+        handleInputError(cardNumberInput, 'Please fill the card number.');
         return;
       }else if( cardNumberInput.value.length !== 16 || isNaN(cardNumberInput.value)){
         handleInputError(cardNumberInput, 'Please enter a valid 16 digit card number.');
