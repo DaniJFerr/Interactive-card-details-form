@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,32 +13,21 @@
 </head>
 <body>
 
-<!-- container body-->
-<div class="container" aria-label="conainter">
-<!--   
-  <section class="hero" aria-label="hero-image"></section> -->
-  <!-- front-card image-->
+<div class="container" aria-label="containter">
 
     <section class="card" label="">
       <div id="Card-front" aria-label="Card-front">
-        <img src="./assets/sass1.png">
+        <img src="./assets/sass1.png" alt="card-icon">
         <h1>0000 0000 0000 0000</h1>
         <h2>Jane Appleseed</h2>
         <p>00/00</p>
         </div>
-      <!-- <div id="Card-front-back" aria-label="Card-front">
-        <img src="./assets/sass1.png">
-        <h1>0000 0000 0000 0000</h1>
-        <h2>Jane Appleseed</h2>
-        <p>00/00</p>
-        </div> -->
+      
        
         <div id="Card-back" aria-label="Card-back">       
           <p class="cardCvc">000</p>
         </div>
-      <!-- <div id="Card-back-back" aria-label="Card-back">       
-        <p class="cardDate">000</p>
-      </div> -->
+      
     </section> 
 
       <Section class="form-body">  
@@ -77,8 +66,97 @@
       </Section>
 </div>
   <section class="footer" aria-label="footer">
-    <h3><a href="https://www.frontendmentor.io"> Frontend-Mentor</a> - Daniel Ferreira © 2023 
-     <a href="https://github.com/DaniJFerr"><i class="fa-brands fa-github"></i></a></h3>
+    <h3><a href="https://www.frontendmentor.io" aria-label="link to frontend-mentor page"> Frontend-Mentor</a> - Daniel Ferreira © 2023 
+     <a href="https://github.com/DaniJFerr" aria-label="link to my personal gitHub page"><i class="fa-brands fa-github"></i></a></h3>
   </section>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./css/style.css"> 
+  <script src="https://kit.fontawesome.com/ff38e5c58a.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+
+
+
+<main class="container" aria-label="main container">
+
+  <section class="card" label="card-section">
+    <div id="Card-front" aria-label="Card-front">
+      <img src="./assets/sass1.png" alt="card-icon">
+      <h1>0000 0000 0000 0000</h1>
+      <h2>Jane Appleseed</h2>
+      <p>00/00</p>
+    </div>
+       
+    <div id="Card-back" aria-label="Card-back" class="card-back">       
+      <p class="cardCvc">000</p>
+    </div>
+  </section> 
+
+  <section class="form-body">  
+    <form id="cardholder" hidden>
+      <div class="formEvent">
+        <div>
+          <div class="card-name">
+            <label name="cardholder">CARDHOLDER NAME</label>
+            <input type="text" placeholder="e.g. Jane Appleseed">
+          </div>
+          <div class="card-number">
+            <label name="cardholder">CARD NUMBER</label>
+            <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+          </div>
+          <div class="date-card-cvc">
+          <div class="card-date">
+            <ul>
+            <li>
+            <label name="cardDate">EXP. DATE(MM/YY)</label>
+           </li>
+           <li>
+            <input type="text" placeholder="MM" label="month">
+            <input type="text" placeholder="YY" label="year">
+          </li>
+          </ul>
+          </div>
+          <div class="card-cvc">
+            <label name="cardCvc">CVC</label>
+            <input type="text" placeholder="e.g. 123">
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="confirmation" hidden>
+        <h1>THANK YOU!</h1>
+        <h2>We've added your card details</h2>
+      </div>
+      <div class="btn">
+      <button class="button" type="submit" aria-label="button"></button>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer" aria-label="page footer">
+  <h3>
+    <a href="https://www.frontendmentor.io" aria-label="link to Frontend Mentor page">Frontend-Mentor</a> - Daniel Ferreira © 2023 
+    <a href="https://github.com/DaniJFerr" aria-label="link to my personal gitHub page"><i class="fa-brands fa-github"></i></a>
+  </h3>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script type="text/javascript" src="/script.js"></script>
+
 </body>
 </html>
