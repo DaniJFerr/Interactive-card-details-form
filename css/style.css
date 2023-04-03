@@ -339,3 +339,136 @@ button.validate:after {
   font-family: "FontAwesome";
   content: "\f00c";
 }
+
+
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(10%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInFromleft {
+    0% {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media (width: 700px) {
+    .form-body {
+      margin-right: 20px;
+    }
+    .card {
+      margin-left: 20px;
+    }
+  }
+  @media (width: 500px) {
+    body {
+      margin: 0px 0px;
+    }
+    .form-body {
+      margin: 250px 50px;
+      position: relative;
+    }
+    .card {
+      width: 200px;
+      margin: 0px 0px;
+      height: 200px;
+    }
+    .container {
+      width: 100%;
+      display: block;
+      justify-content: center;
+      background-image: url(../assets/bg-main-mobile.png);
+      background-size: 550px;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    #Card-front h1 {
+      font-size: 1.5rem;
+      margin: 100px 45px 70px;
+    }
+    #Card-front p {
+      font-size: 1rem;
+      margin: 170px 10px auto 300px;
+      text-align: right;
+      font-weight: 500;
+      padding: 0px;
+    }
+    #Card-front h2 {
+      font-size: 1rem;
+      margin: 170px 40px;
+      text-align: left;
+      font-weight: 500;
+      padding: 0px;
+    }
+    #Card-back p {
+      font-size: 1rem;
+      margin: 100px auto auto 300px;
+      text-align: right;
+      font-weight: 500;
+      padding: 0px;
+    }
+    #Card-front {
+      position: absolute;
+      background-image: url(../assets/bg-card-front.png);
+      background-size: 400px 230px;
+      width: 400px;
+      height: 230px;
+      background-repeat: no-repeat top;
+      margin: 150px 10px;
+      z-index: 100;
+    }
+    #Card-back {
+      position: relative;
+      background-image: url(../assets/bg-card-back.png);
+      background-size: 400px 230px;
+      width: 400px;
+      height: 230px;
+      margin: 30px 70px;
+    }
+    .footer h3, a {
+      padding-top: 1px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .footer a:hover {
+      padding-top: 1px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
