@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ff38e5c58a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="./css/style.css"> 
+  <script type="text/javascript" src="/public/script.js"></script>
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+
+<!-- container body-->
+<div class="container" aria-label="conainter">
+<!--   
+  <section class="hero" aria-label="hero-image"></section> -->
+  <!-- front-card image-->
+
+    <section class="card" label="">
+      <div id="Card-front" aria-label="Card-front">
+        <img src="./assets/sass1.png">
+        <h1>0000 0000 0000 0000</h1>
+        <h2>Jane Appleseed</h2>
+        <p>00/00</p>
+        </div>
+      <!-- <div id="Card-front-back" aria-label="Card-front">
+        <img src="./assets/sass1.png">
+        <h1>0000 0000 0000 0000</h1>
+        <h2>Jane Appleseed</h2>
+        <p>00/00</p>
+        </div> -->
+       
+        <div id="Card-back" aria-label="Card-back">       
+          <p class="cardCvc">000</p>
+        </div>
+      <!-- <div id="Card-back-back" aria-label="Card-back">       
+        <p class="cardDate">000</p>
+      </div> -->
+    </section> 
+
+      <Section class="form-body">  
+        <form id="cardholder" hidden>
+          <div class="formEvent">
+            <ul>
+             <div class="card-name">
+                <li><label name="cardholder">CARDHOLDER NAME</label></li>
+                 <li><input type="text" placeholder="  e.g. Jane Appleseed "></li>
+              </div>
+                <div class="card-number">
+                  <li> <label  name="cardholder">CARD NUMBER</label></li>
+                  <li><input type="text" placeholder="  e.g. 1234 5678 9123 0000 "></li>
+                </div>
+                  <div class="date-card-cvc">
+                    <div class="card-date">
+                      <li><label  name="cardDate">EXP. DATE(MM/YY)</label></li>
+                      <li><input type="text" placeholder="  MM " label=" month "><input type="text" placeholder="  YY " label="year"></li>
+                    </div>
+                      <div class="card-cvc">  
+                        <li><label name="cardCvc">CVC</label></li>
+                        <li><input type="text" placeholder="  e.g. 123 "></li>
+                      </div>
+                  </div> 
+            </ul>
+          </div>
+
+          <div class="confirmation" hidden>
+            <h1>THANK YOU!</h1>
+            <h2>We've added your card details</h2>
+          </div>
+        </form>
+        <div class="btn">
+         <button class="button" type="submit" aria-label="button"></button>
+        </div>
+      </Section>
+</div>
+  <section class="footer" aria-label="footer">
+    <h3><a href="https://www.frontendmentor.io"> Frontend-Mentor</a> - Daniel Ferreira © 2023 
+     <a href="https://github.com/DaniJFerr"><i class="fa-brands fa-github"></i></a></h3>
+  </section>
+</body>
+</html>
