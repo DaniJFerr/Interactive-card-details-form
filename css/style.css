@@ -394,7 +394,7 @@ button.validate:after {
     }
   }
    */
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     body {
       margin: 0px 0px;
     }
@@ -407,12 +407,12 @@ button.validate:after {
       margin: 0px 0px;
       height: 200px;
     }
-    .container {
+    .container {    
       width: 100%;
       display: block;
       justify-content: center;
       background-image: url(../assets/bg-main-mobile.png);
-      background-size: 550px;
+      background-size: 600px;
       background-repeat: no-repeat;
       position: relative;
     }
