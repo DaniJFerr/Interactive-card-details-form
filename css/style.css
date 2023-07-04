@@ -533,17 +533,17 @@ button.validate:after {
       width: 35px;
     }
     #Card-front h1 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin: 110px 30px 70px;
     }
     #Card-front p {
-      font-size: 0.8rem;
-      margin: 150px 5px auto 230px;
+      font-size: 0.7rem;
+      margin: 150px 5px auto 210px;
       text-align: right;
       padding: 0px;
     }
     #Card-front h2 {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       margin: 150px 30px;
       text-align: left;
       padding: 0px;
@@ -552,8 +552,8 @@ button.validate:after {
     #Card-front {
       position: absolute;
       background-image: url(../assets/bg-card-front.png);
-      background-size: 300px 190px;
-      width: 300px;
+      background-size: 280px 190px;
+      width: 280px;
       height: 180px;
       background-repeat: no-repeat top;
       margin: 138px 15px;
@@ -562,14 +562,14 @@ button.validate:after {
     #Card-back {
       position: absolute;
       background-image: url(../assets/bg-card-back.png);
-      background-size: 300px 190px;
-      width: 300px;
+      background-size: 280px 190px;
+      width: 280px;
       height: 180px;
-      margin: 30px 55px;
+      margin: 30px 60px;
     }
     #Card-back p {
       font-size: 0.8rem;
-      margin: 85px auto auto 210px;
+      margin: 85px auto auto 200px;
       text-align: right;
       font-weight: 500;
       padding: 0px;
@@ -589,7 +589,7 @@ button.validate:after {
 
     .footer {
       display: flex;
-      bottom: -165px;
+      bottom: -170px;
       align-self: center;
       margin: auto;
     }
