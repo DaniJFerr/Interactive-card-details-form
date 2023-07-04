@@ -1,21 +1,36 @@
+:root {
+--container-background:  url(../assets/bg-main-desktop.png);
+--container-background-color: hsl(0, 0%, 100%);
+--color-white: #fff;
+--font-family:"Space Grotesk";
+--border-color: hsl(270, 3%, 87%);
+--grey-color: hsl(279, 6%, 55%);
+
+--card-front-background: url(../assets/bg-card-front.png);
+--card-back-background:  url(../assets/bg-card-back.png);
+
+--font-family-button: "FontAwesome";
+--dark-text-color: hsl(278, 68%, 11%);
+}
+
 body {
   display: flex;
   justify-content: center;
-  font-family: "Space Grotesk";
+  font-family: var(--font-family);
   font-size: 10px;
   font-weight: 500;
-  color: hsl(278, 68%, 11%);
-  background-color: hsl(270, 3%, 87%);
+  color: var(--dark-text-color) ;
+  background-color: var(--border-color);
 }
 
 .container {
   display: flex;
-  background-image: url(../assets/bg-main-desktop.png);
+  background-image: var(--container-background);
   background-repeat: no-repeat;
   position: absolute;
   width: auto;
   height: 900px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--container-background-color);
   -webkit-box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.61);
   box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.61);
   animation: 1s ease-out 0s 1 fadeInAnimation;
@@ -39,7 +54,7 @@ body {
 
 #Card-front {
   position: absolute;
-  background-image: url(../assets/bg-card-front.png);
+  background-image: var(--card-front-background);
   background-repeat: no-repeat;
   width: 445px;
   height: 245px;
@@ -52,7 +67,7 @@ body {
 
 #Card-front h1 {
   position: absolute;
-  color: #fff;
+  color:var(--color-white);
   font-size: 2rem;
   margin: 130px 45px 70px;
   font-weight: 500;
@@ -62,7 +77,7 @@ body {
   position: absolute;
   justify-content: flex-end;
   font-size: 1rem;
-  color: #fff;
+  color:var(--color-white);
   margin: 200px 10px auto 350px;
   text-align: right;
   font-weight: 500;
@@ -73,7 +88,7 @@ body {
   position: relative;
   display: flex;
   font-size: 1rem;
-  color: #fff;
+  color:var(--color-white);
   margin: 200px 40px;
   text-align: left;
   font-weight: 500;
@@ -82,7 +97,7 @@ body {
 
 #Card-back {
   position: relative;
-  background-image: url(../assets/bg-card-back.png);
+  background-image: var(--card-back-background);
   background-repeat: no-repeat;
   margin-top: 300px;
   width: 445px;
@@ -97,7 +112,7 @@ body {
   width: 50px;
   position: absolute;
   font-size: 1rem;
-  color: #fff;
+  color: var(--color-white);
   margin: 110px 320px;
   padding: 0px 10px;
   text-align: right;
@@ -111,15 +126,20 @@ body {
   animation: 1s ease-out 0s 1 slideInFromleft;
 }
 
+.formEvent{
+  position: relative;
+  width: 100%;
+}
+
 #cardholder {
-  width: 370px !important;
+  width: 100%;
   height: 270px;
   position: relative;
   justify-items: center;
   align-items: center;
   flex-grow: space-around;
   display: block;
-  margin: 10px;
+  margin: 10px 0px;
   padding: 0px;
 }
 
@@ -130,35 +150,36 @@ body {
 }
 
 .card-name input {
-  width: 350px;
-  font-family: "Space Grotesk";
+  width: 94%;
+  font-family: var(--font-family);
   font-weight: 500;
   padding-left: 15px;
   height: 35px;
   margin: 5px auto 0px 0px;
   border-radius: 10px;
-  border-color: hsl(270, 3%, 87%);
-  color: hsl(279, 6%, 55%);
+  border-color: var(--border-color);
+  color: var(--grey-color);
 }
 
 .card-name ::placeholder {
-  color: hsl(279, 6%, 55%);
+  color: var(--grey-color);
 }
 
 .card-number input {
-  width: 350px;
-  font-family: "Space Grotesk";
+  position: relative;
+  width: 94%;
+  font-family: var(--font-family);
   padding-left: 15px;
   font-weight: 500;
   height: 35px;
   margin: 5px auto;
   border-radius: 10px;
-  border-color: hsl(270, 3%, 87%);
-  color: hsl(279, 6%, 55%);
+  border-color: var(--border-color);
+  color: var(--grey-color);
 }
 
 .card-number ::placeholder {
-  color: hsl(279, 6%, 55%);
+  color: var(--grey-color);
 }
 
 .card-date {
@@ -175,12 +196,12 @@ body {
 .card-date input {
   width: 50px;
   height: 35px;
-  font-family: "Space Grotesk";
+  font-family: var(--font-family);
   padding-left: 10px;
   margin: 10px 0px;
   margin-right: 8px;
   border-radius: 10px;
-  border-color: hsl(270, 3%, 87%);
+  border-color: var(--border-color);
 }
 
 .card-date ::placeholder {
@@ -193,18 +214,18 @@ body {
 }
 
 .card-cvc {
-  width: 200px;
+  width: 230px;
   margin-top: 20px;
 }
 
 .card-cvc input {
-  width: 205px;
-  font-family: "Space Grotesk";
+  width: 90%;
+  font-family: var(--font-family);
   padding-left:  10px;
   height: 35px;
-  margin: 10px 0px;
+  margin: 10px 5px;
   border-radius: 10px;
-  border-color: hsl(270, 3%, 87%);
+  border-color: var(--border-color);
 
 }
 
@@ -224,7 +245,7 @@ body {
 }
 
 .confirmation {
-  margin: 100px auto;
+  margin: 70px auto;
   text-align: center;
   height: auto;
   animation: 1s ease-out 0s 1 slideInFromBottom;
@@ -256,9 +277,10 @@ p .error {
 
 .footer {
   position: absolute;
-  bottom: 10px;
-  justify-content: flex-end;
+  bottom: 0px;
   display: flex;
+  justify-content: flex-end;
+  align-self: center;
 }
 
 .footer h3, a {
@@ -280,6 +302,7 @@ p .error {
 }
 
 .btn {
+  width: 100%;
   text-align: center;
   margin: auto 0px;
   padding: 0px 0px;
@@ -289,11 +312,11 @@ button {
   outline: none;
   height: 50px;
   text-align: center;
-  width: 370px;
+  width: 100%;
   border-radius: 40px;
-  background: #fff;
-  border: 2px solid hsl(278, 68%, 11%);
-  color: hsl(278, 68%, 11%);
+  background: var(--color-white);
+  border: 2px solid var(--dark-text-color);
+  color:var(--dark-text-color);
   letter-spacing: 1px;
   text-shadow: none;
   margin: auto 0px;
@@ -304,8 +327,8 @@ button {
   transition: all 0.25s ease;
 }
 button:hover {
-  color: #fff;
-  background: hsl(278, 68%, 11%);
+  color: var(--color-white);
+  background: var(--dark-text-color);
 }
 button:active {
   letter-spacing: 2px;
@@ -318,26 +341,36 @@ button.onclic {
   border-color: #bbbbbb;
   border-width: 3px;
   font-size: 0;
-  border-left-color: hsl(249, 99%, 64%);
   animation: rotating 2s 0.25s linear infinite;
+  border-left-color: hsl(249, 99%, 64%);
+  box-shadow:
+  0 0 7px  #32f4b6,
+  0 0 10px #32f4b6,
+  0 0 21px #32f4b6
 }
 button.onclic:after {
   content: "";
 }
 button.onclic:hover {
-  color: #1ecd97;
-  background: #fff;
+  background: var(--text-color-white);
   font-weight: bold;
+  color: #1ecd97;
 }
+
 button.validate {
   font-size: 20px;
-  color: #fff;
+  color: var(--text-color-white);
   background: linear-gradient(85deg, rgb(82, 40, 208) 0%, rgb(112, 42, 172) 100%);
 }
 button.validate:after {
-  font-family: "FontAwesome";
+  font-family: var(--font-family-button);
   content: "\f00c";
   font-weight: bold;
+  color: #72f5cb;
+  text-shadow:
+      0 0 7px  #32f4b6,
+      0 0 10px #32f4b6,
+      0 0 21px #32f4b6
 }
 
 @keyframes slideInFromBottom {
@@ -444,7 +477,7 @@ button.validate:after {
       width: 370px;
       height: 210px;
       background-repeat: no-repeat top;
-      margin: 160px 20px;
+      margin: 160px 10px;
       z-index: 1;
     }
     #Card-back {
@@ -467,23 +500,34 @@ button.validate:after {
       font-size: 1.2rem;
       font-weight: bold;
     }
+
+
   }
   @media (max-width: 400px) {
 
     .form-body {
+      width: 100%;
       margin: 20px auto!important;
       position: relative;
+      display: flex;
+      justify-content: center;
     }
     .container {
       width: 400px;
+      height: auto;
       margin: auto;
     }
 
     .card {
-      width: 400px;
+      width: 100%;
       margin: auto;
       height: 350px;
     }
+
+    #cardholder {
+      width: 90%;
+    }
+    
     .card img {
       margin: 30px 30px;
       position: absolute;
@@ -521,7 +565,7 @@ button.validate:after {
       background-size: 300px 190px;
       width: 300px;
       height: 180px;
-      margin: 30px 70px;
+      margin: 30px 65px;
     }
     #Card-back p {
       font-size: 0.8rem;
@@ -533,7 +577,7 @@ button.validate:after {
     .footer h3, a {
       padding-top: 1px;
       text-align: center;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: bold;
     }
     .footer a:hover {
@@ -542,8 +586,13 @@ button.validate:after {
       font-size: 1rem;
       font-weight: bold;
     }
+
     .footer {
-      bottom: 10px;
+      display: flex;
+      bottom: -165px;
+      align-self: center;
+      margin: auto;
     }
+  
   }
   

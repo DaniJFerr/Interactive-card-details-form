@@ -9,9 +9,8 @@
   <script src="https://kit.fontawesome.com/ff38e5c58a.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Interactive card details form</title>
 </head>
+
 <body>
-
-
 
 <main class="container" aria-label="main container">
 
@@ -30,36 +29,36 @@
 
   <section class="form-body">  
     <form id="cardholder" hidden>
-      <div class="formEvent">
-        <div>
+    
+        <div class="formEvent">
           <div class="card-name">
             <label for="cardholder">CARDHOLDER NAME</label>
             <input type="text" placeholder="e.g. Jane Appleseed">
           </div>
           <div class="card-number">
             <label for="cardholder">CARD NUMBER</label>
-            <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+            <input type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength= "16">
           </div>
           <div class="date-card-cvc">
-          <div class="card-date">
-            <ul>
-            <li>
-            <label for="cardDate">EXP. DATE(MM/YY)</label>
-           </li>
-           <li>
-            <input type="text" placeholder="MM" name="month">
-            <input type="text" placeholder="YY" name="year">
-          </li>
-          </ul>
-          </div>
-          <div class="card-cvc">
-            <label for="cardCvc">CVC</label>
-            <input type="text" placeholder="e.g. 123">
-          </div>
+            <div class="card-date">
+              <ul>
+              <li>
+              <label for="cardDate">EXP. DATE(MM/YY)</label>
+             </li>
+             <li>
+              <input type="text" placeholder="MM" name="month" maxlength="2" />
+            </label>
+              <input type="text" placeholder="YY" name="year"  maxlength="2">
+            </li>
+            </ul>
+            </div>
+            <div class="card-cvc">
+              <label for="cardCvc">CVC</label>
+              <input type="text" placeholder="e.g. 123" maxlength="3">
+            </div>
           </div>
         </div>
-      </div>
-
+      
       <div class="confirmation" hidden>
         <h1>THANK YOU!</h1>
         <h2>We've added your card details</h2>
@@ -68,16 +67,16 @@
       <button class="button" type="submit" aria-label="button"></button>
       </div>
     </form>
-  </section>
 
+  </section>
 </main>
 
-<footer class="footer" aria-label="page footer">
-  <h3>
-    <a href="https://www.frontendmentor.io" aria-label="link to Frontend Mentor page">Frontend-Mentor</a> - Daniel Ferreira © 2023 
-    <a href="https://github.com/DaniJFerr" aria-label="link to my personal gitHub page"><i class="fa-brands fa-github"></i></a>
-  </h3>
-</footer>
+    <footer class="footer" aria-label="page footer">
+      <h3>
+        <a href="https://www.frontendmentor.io" aria-label="link to Frontend Mentor page">Frontend-Mentor</a> - Daniel Ferreira © 2023 
+        <a href="https://github.com/DaniJFerr" aria-label="link to my personal gitHub page"><i class="fa-brands fa-github"></i></a>
+      </h3>
+    </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
