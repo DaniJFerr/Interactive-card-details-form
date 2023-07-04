@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dateCardCvcInputs = document.querySelectorAll('.date-card-cvc input');
 
     const cardNumberValue = cardNumberInput.value.trim().replace(/\s+/g, '');
-    const formattedCardNumber = cardNumberValue.replace(/(.{4})/g, '$1 ');
+    const formattedCardNumber = cardNumberValue.replace(/(.{4})/g, ' $1 ');
 
     const isValidCardName = cardNameInput.value !== '';
     const isValidCardNumber = /^\d{16}$/.test(cardNumberValue);

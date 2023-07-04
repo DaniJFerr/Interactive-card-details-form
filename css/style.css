@@ -556,7 +556,7 @@ button.validate:after {
       width: 280px;
       height: 180px;
       background-repeat: no-repeat top;
-      margin: 138px 15px;
+      margin: 138px 20px;
       z-index: 1;
     }
     #Card-back {
